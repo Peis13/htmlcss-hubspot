@@ -11,32 +11,34 @@
 /* tag */
 body {
  font-family: 'Montserrat', sans-serif;
- font-size: 16px;
+ font-size: 15px;
  color: #33475b;
 }
 ul {
   list-style-type: none;
 }
 a {
+  font-size: 18px;
   text-decoration: none;
 }
-
+h1 {
+  font-size: 50px;
+}
+p {
+  margin: 20px 0;
+  line-height: 30px;
+}
 /* class */
 
 /* layout */
 .container {
-  padding: 0 10%;
+  padding: 0 8%;
   height: 100%;
   position: relative;
 }
 .col {
   float: left;
   height: 100%;
-}
-.cleafix::after {
-  content: '';
-  display: table;
-  clear: both;
 }
 .thirty {
   width: 30%;
@@ -48,29 +50,47 @@ a {
   width: 70%;
 }
 .stripe {
-  height: 100px;
+  height: 85px;
+}
+.cleafix::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 /* style */
 .cta {
-  font-size: 13px;
+  font-size: 14px;
   color: white;
-  background-color: orange;
+  background-color: #fe775a;
   border-radius: 5px;
 }
 .alt {
-  color: orange;
+  color: #fe775a;
   background-color: transparent;
-  border: 1px solid orange;
+  border: 1px solid #fe775a;
+}
+.primary {
+  padding: 20px 30px;
+  display: inline-block;
 }
 .secondary {
   padding: 10px;
 }
-.inline-list li {
-  display: inline-block;
-}
 .right {
   text-align: right;
+}
+.inline-list li {
+  display: inline;
+}
+
+/* content */
+.get-hs::before {
+  content: 'GetHubspotFree';
+}
+.get-started::before {
+  content: 'Get started with FREE tools, and upgrade as you grow.';
+  font-size: 11px;
 }
 /* END GENERAL */
 
@@ -81,8 +101,8 @@ header .user-menu {
 header a {
   color: #33475b;
 }
-header li a {
-  line-height: 100px;
+header .stripe li {
+  line-height: 85px;
 }
 
 /* language and contact */
@@ -90,7 +110,7 @@ header .user-menu .language li {
   padding: 0 20px;
   border-right: 1px solid #33475b;
 }
-header .user-menu .language li:first-child {
+header .user-menu .language li:first-child {    /* NOTE: semplificare */
   padding-left: 0;
 }
 header .user-menu .language li:last-child {
@@ -100,7 +120,6 @@ header .user-menu .language li:last-child {
 /* action */
 header .user-menu .action li {
   padding: 0 10px;
-  border: none;
 }
 header .user-menu .action li:first-child {
   padding-left: 0;
@@ -118,15 +137,36 @@ header .navigation .logo {
   top: 50%;
   transform: translate(0, -50%);
 }
-header .navigation .nav-menu li {
+header .navigation .nav-menu li {   /* NOTE: sostituire con .stripe */
   padding: 0 10px;
   border: none;
 }
-header .navigation .nav-menu li:first-child {
+header .navigation .nav-menu li:first-child {   /* NOTE: sostituire con .stripe */
   padding-left: 0;
 }
-header .navigation .nav-menu li:last-child {
+header .navigation .nav-menu li:last-child {    /* NOTE: sostituire con .stripe */
   padding-right: 0;
 }
 /* end navigation */
+
+/* banner */
+header .banner {
+  height: 695px;
+  padding-top: 50px;
+  background-color: #fff5ef;
+  background-image: url(../img/jumbotron.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  position: relative;
+}
+/* banner bottom */
+header .banner .banner-bottom {
+  height: 85px;
+  width: 100%;
+  background-color: #afebe4;
+  border-top: 3px solid #33475b;
+  border-bottom: 3px solid #33475b;
+  position: absolute;
+  bottom: 0;
+}
 /* END HEADER */
