@@ -1,0 +1,31 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* END RESET */
+
+/* GENERAL */
+
+/* tag */
+body {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 20px;
+ color: #33475b;
+}
+/* class */
+.container {
+  padding: 0 10%;
+}
+.stripe {
+  height: 100px;
+}
+/* END GENERAL */
+
+/* HEADER */
+header .menu-user {
+  background-color: #f4f9fd;
+}
+
+/* END HEADER */
