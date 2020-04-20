@@ -27,6 +27,7 @@ a {
 .container {
   padding: 0 10%;
   height: 100%;
+  position: relative;
 }
 .col {
   float: left;
@@ -37,8 +38,14 @@ a {
   display: table;
   clear: both;
 }
+.thirty {
+  width: 30%;
+}
 .fifty {
   width: 50%;
+}
+.seventy {
+  width: 70%;
 }
 .stripe {
   height: 100px;
@@ -74,7 +81,7 @@ header .user-menu {
 header a {
   color: #33475b;
 }
-header .user-menu li a {
+header li a {
   line-height: 100px;
 }
 
@@ -104,4 +111,22 @@ header .user-menu .action li:last-child {
 header .user-menu .action li .search {
   color: #13abc2;
 }
+
+/* navigation */
+header .navigation .logo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+header .navigation .nav-menu li {
+  padding: 0 10px;
+  border: none;
+}
+header .navigation .nav-menu li:first-child {
+  padding-left: 0;
+}
+header .navigation .nav-menu li:last-child {
+  padding-right: 0;
+}
+/* end navigation */
 /* END HEADER */
