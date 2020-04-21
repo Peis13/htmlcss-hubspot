@@ -8,7 +8,7 @@
 
 /* GENERAL */
 
-/* tag */
+/* TAG */
 body {
  font-family: 'Montserrat', sans-serif;
  font-size: 15px;
@@ -26,24 +26,34 @@ h1 {
   margin-bottom: 30px;
 }
 h2 {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 30px;
+}
+h3 {
+  font-size: 25px;
 }
 p {
   margin: 20px 0;
   line-height: 30px;
 }
-/* class */
+img {
+  display: inline-block;
+}
+section {
+  padding: 50px 0;
+}
+
+/* CLASS */
 
 /* layout */
 .container {
-  padding: 0 8%;
   height: 100%;
+  width: 90%;
+  margin: auto;
   position: relative;
 }
 .col {
   float: left;
-  height: 100%;
 }
 .thirty {
   width: 30%;
@@ -56,9 +66,10 @@ p {
 }
 .stripe {
   height: 85px;
+  line-height: 85px;
 }
-section {
-  margin: 50px 0;
+.stripe .col {
+  height: 100%;
 }
 .row {
   margin-bottom: 50px;
@@ -68,17 +79,32 @@ section {
 }
 .box {
   width: 100%;
-  height: 400px;
-  padding: 20px;
-  background: red;
+  padding: 20px 40px;
 }
-.cleafix::after {
+.clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
 .inline-list li {
   display: inline;
+}
+.check {
+  padding-bottom: 50px;
+}
+.check li span {
+  margin: 0 10px;
+}
+.check li i {
+  color: #fe775a;
+}
+.pop-feature {
+  margin: 30px 0;
+  line-height: 20px;
+}
+.figure {
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 /* button */
@@ -102,38 +128,58 @@ section {
 }
 
 /* text */
+.left {
+  text-align: left;
+}
 .center {
   text-align: center;
 }
 .right {
   text-align: right;
 }
-.upper-case {
+.uppercase {
   text-transform: uppercase;
 }
 .capitalize {
   text-transform: capitalize;
 }
 
+/* color */
+.white {
+  background-color: white;
+  border-style: groove;
+  border-radius: 5px;
+}
+.light-blue {
+  background-color: #f4f9fd;
+}
+
 /* content */
 .get-hs::before {
   content: 'GetHubspotFree';
+}
+.learn::before {
+  content: 'Learn More';
 }
 .get-started::before {
   content: 'Get started with FREE tools, and upgrade as you grow.';
   font-size: 11px;
 }
+.pop-feature::before {
+  content: 'popular feature';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
 /* END GENERAL */
 
 /* HEADER */
 header a {
   color: #33475b;
 }
-header .user-menu {
-  background-color: #f4f9fd;
-}
-header .stripe li {
-  line-height: 85px;
+header .stripe .logo > img {
+  vertical-align: middle;
 }
 header .stripe .right li {
   padding-left: 20px;
@@ -151,18 +197,10 @@ header .user-menu .language li:last-child {
   border: none;
 }
 
-/* navigation */
-header .navigation .logo {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
 /* action */
 header .user-menu .action li .search {
   color: #13abc2;
 }
-
 
 /* banner */
 header .banner {
@@ -174,6 +212,7 @@ header .banner {
   background-position: 100% 100%;
   position: relative;
 }
+
 /* banner bottom */
 header .banner .banner-bottom {
   height: 85px;
@@ -187,13 +226,41 @@ header .banner .banner-bottom {
 /* END HEADER */
 
 /* MAIN */
+
 /* services */
-main .services .intro {
+
+
+/* intro */
+main .services .intro .box {
   padding: 20px 100px;
 }
-main .services .intro img {
+main .services .intro .box img {
   height: 200px;
+}
+
+/* CRM */
+#crm > * {
+  padding: 50px 50px 0;
+}
+
+/* hr */
+main .services .crm .col.seventy hr {
+  width: 60%;
+  margin: 5px 0 5px 50px;
+  border: 1px solid gray;
+  background-color: gray;
   display: inline-block;
 }
+
+/* plans */
+main .services .plans .box hr {
+  margin: 40px 0;
+  border: 1px solid gray;
+  background-color: gray;
+}
+main .services .plans .col:nth-child(2) {
+  margin: 0 5%;
+}
+
 /* end services */
 /* END MAIN */
