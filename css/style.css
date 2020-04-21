@@ -106,14 +106,20 @@ p {
 /* END GENERAL */
 
 /* HEADER */
-header .user-menu {
-  background-color: #f4f9fd;
-}
 header a {
   color: #33475b;
 }
+header .user-menu {
+  background-color: #f4f9fd;
+}
 header .stripe li {
   line-height: 85px;
+}
+header .stripe .right li {
+  padding-left: 20px;
+}
+header .stripe li:last-child {
+  padding-right: 0;
 }
 
 /* language and contact */
@@ -121,25 +127,8 @@ header .user-menu .language li {
   padding: 0 20px;
   border-right: 1px solid #33475b;
 }
-header .user-menu .language li:first-child {    /* NOTE: semplificare */
-  padding-left: 0;
-}
 header .user-menu .language li:last-child {
   border: none;
-  padding-right: 0;
-}
-/* action */
-header .user-menu .action li {
-  padding: 0 10px;
-}
-header .user-menu .action li:first-child {
-  padding-left: 0;
-}
-header .user-menu .action li:last-child {
-  padding-right: 0;
-}
-header .user-menu .action li .search {
-  color: #13abc2;
 }
 
 /* navigation */
@@ -148,17 +137,12 @@ header .navigation .logo {
   top: 50%;
   transform: translate(0, -50%);
 }
-header .navigation .nav-menu li {   /* NOTE: sostituire con .stripe */
-  padding: 0 10px;
-  border: none;
+
+/* action */
+header .user-menu .action li .search {
+  color: #13abc2;
 }
-header .navigation .nav-menu li:first-child {   /* NOTE: sostituire con .stripe */
-  padding-left: 0;
-}
-header .navigation .nav-menu li:last-child {    /* NOTE: sostituire con .stripe */
-  padding-right: 0;
-}
-/* end navigation */
+
 
 /* banner */
 header .banner {
