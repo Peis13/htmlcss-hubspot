@@ -178,12 +178,6 @@ section {
 }
 
 /* content */
-.get-hs::before {
-  content: 'GetHubspotFree';
-}
-.learn::before {
-  content: 'Learn More';
-}
 
 /* ID */
 #copyright {
