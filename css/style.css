@@ -12,7 +12,7 @@
 body {
  font-family: 'Montserrat', sans-serif;
  font-size: 15px;
- color: #33475b;
+ color: #33475b;    /* NOTE: posso dare una classe al BODY? */
 }
 ul {
   list-style-type: none;
@@ -100,7 +100,7 @@ section {
   margin: 0 10px;
 }
 .check li i {
-  color: #fe775a;
+  color: #fe775a;   /* NOTE: Raggruppare COLOR? */
 }
 .figure {
   margin-bottom: 20px;
@@ -114,10 +114,10 @@ section {
   font-size: 14px;
   color: white;
   background-color: #fe775a;
-  border-radius: 5px;
+  border-radius: 5px;      /* NOTE: Raggruppare RADIUS? */
 }
 .alt {
-  color: #fe775a;
+  color: #fe775a;   /* NOTE: Raggruppare COLOR? */
   background-color: transparent;
   border: 1px solid #fe775a;
 }
@@ -149,7 +149,7 @@ section {
 .white {
   background-color: white;
   border-style: groove;
-  border-radius: 5px;
+  border-radius: 5px;   /* NOTE: Raggruppare RADIUS? */
 }
 .light-blue {
   background-color: #f4f9fd;
@@ -168,7 +168,7 @@ section {
 
 /* HEADER */
 header a {
-  color: #33475b;
+  color: #33475b;   /* NOTE: come il BODY */
 }
 header .stripe .logo > img {
   vertical-align: middle;
@@ -176,7 +176,7 @@ header .stripe .logo > img {
 header .stripe .right li {
   padding-left: 20px;
 }
-header .stripe li:last-child {
+header .stripe .right li:last-child {
   padding-right: 0;
 }
 
@@ -184,6 +184,9 @@ header .stripe li:last-child {
 header .user-menu .language li {
   padding: 0 20px;
   border-right: 1px solid #33475b;
+}
+header .user-menu .language li:first-child {
+  padding-left: 0;
 }
 header .user-menu .language li:last-child {
   border: none;
