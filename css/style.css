@@ -10,18 +10,8 @@
 /* TAG */
 body {
  font-family: 'Montserrat', sans-serif;
- font-size: 15px;
+ font-size: 16px;
  color: #33475b;
-}
-ul {
-  list-style-type: none;
-}
-a {
-  font-size: 18px;    /* NOTE: mettere a posto tutti i font-size */
-  text-decoration: none;
-}
-a.box {
-  display: inline-block;
 }
 h1 {
   font-size: 50px;
@@ -40,14 +30,21 @@ h4 {
   display: inline-block;
 }
 p {
-  margin: 20px 0;
+  margin: 25px 0;
   line-height: 30px;
+}
+a {
+  font-size: 15px;    /* NOTE: mettere a posto tutti i font-size */
+  text-decoration: none;
+}
+a.box {
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
 }
 section {
   padding: 50px 0;
-}
-label {
-  font-size: 18px;
 }
 
 /* CLASS */
@@ -101,7 +98,7 @@ label {
   display: inline;
 }
 .check {
-  margin: 30px 0;
+  margin: 30px 0 50px;
 }
 .check li span {
   margin: 0 10px;
@@ -126,7 +123,6 @@ label {
 
 /* button */
 .cta {
-  font-size: 14px;
   background-color: #fe775a;
   border-radius: 5px;      /* NOTE: Raggruppare RADIUS? */
 }
@@ -270,12 +266,9 @@ main .services .plans .col .bgwhite {
   padding: 20px 40px;
 }
 main .services .plans .col .bgwhite hr {
-  margin: 40px 0;
+  margin: 60px 0 40px;
   border: 1px solid gray;
   background-color: gray;
-}
-.plans .check {
-  margin-bottom: 50px;
 }
 /* end Services */
 
@@ -335,9 +328,16 @@ main .partners .row .col.teaser {
 /* end Partners */
 /* END MAIN */
 
-  /* FOOTER */
-  footer {
-    background-color: #32495b;
-  }
+/* FOOTER */
+footer {
+  background-color: #32495b;
+}
 
+  /* various link */
+footer .various-link .col .link-list li {
+  margin: 10px 0;
+}
+footer .various-link .col .link-list li:first-child {
+  margin-top: 30px;
+}
   /* END FOOTER */
