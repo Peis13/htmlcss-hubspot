@@ -108,8 +108,14 @@ section {
 .figure {
   margin-bottom: 20px;
 }
-.medium {
+.small {
   height: 100px;
+}
+.medium {
+  height: 200px;
+}
+.large {
+  height: 350px;
 }
 
 /* button */
@@ -230,9 +236,6 @@ header .banner .banner-bottom {
 main .services .intro .seventy {
   margin: auto;
 }
-main .services .intro img {
-  height: 200px;
-}
 
 /* CRM */
 #crm > * {
@@ -300,13 +303,22 @@ main .community .row.table .item > p.smaller {
 }
 
 /* Partners */
+/* customers */
 main .partners .customers .stripe .logo {
   width: calc(100% / 4);
   padding: 20px;
 }
+main .partners .customers .seventy {
+  padding: 0 120px;
+}
 main .partners .customers .seventy .stripe .logo > img {
   width: 100%;
   vertical-align: middle;
+}
+
+/* teaser */
+main .partners .row .col.teaser {
+  padding-right: 100px;
 }
 /* end Community */
 /* END MAIN */
