@@ -34,7 +34,7 @@ p {
   line-height: 30px;
 }
 a {
-  font-size: 15px;    /* NOTE: mettere a posto tutti i font-size */
+  font-size: 15px;
   text-decoration: none;
 }
 ul {
@@ -105,9 +105,6 @@ section {
 }
 
 /* size */
-.very-small {
-  height: 33px;
-}
 .small {
   height: 100px;
 }
@@ -121,7 +118,7 @@ section {
 /* button */
 .cta {
   background-color: #fe775a;
-  border-radius: 5px;      /* NOTE: Raggruppare RADIUS? */
+  border-radius: 5px;
   display: inline-block;
 }
 .alt {
@@ -174,10 +171,8 @@ section {
 .bgwhite {
   background-color: white;
   border-style: groove;
-  border-radius: 5px;   /* NOTE: Raggruppare RADIUS? */
+  border-radius: 5px;
 }
-
-/* content */
 
 /* ID */
 #copyright {
@@ -281,6 +276,9 @@ main .community {
 }
 main .community .row:last-child {
   margin-bottom: 50px;
+}
+main .community .row .table-row:last-child .item:last-child > .figure {
+  margin-bottom: 30px;
 }
 
 /* table */
