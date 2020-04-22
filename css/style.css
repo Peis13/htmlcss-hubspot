@@ -7,7 +7,6 @@
 /* END RESET */
 
 /* GENERAL */
-
 /* TAG */
 body {
  font-family: 'Montserrat', sans-serif;
@@ -18,7 +17,7 @@ ul {
   list-style-type: none;
 }
 a {
-  font-size: 18px;
+  font-size: 18px;    /* NOTE: mettere a posto tutti i font-size */
   text-decoration: none;
 }
 a.box {
@@ -47,9 +46,11 @@ p {
 section {
   padding: 50px 0;
 }
+label {
+  font-size: 18px;
+}
 
 /* CLASS */
-
 /* layout */
 .container {
   height: 100%;
@@ -59,6 +60,9 @@ section {
 }
 .col {
   float: left;
+}
+.quarter {
+  width: 25%;
 }
 .thirty {
   width: 30%;
@@ -102,11 +106,13 @@ section {
 .check li span {
   margin: 0 10px;
 }
-.check li i {
-  color: #fe775a;   /* NOTE: Raggruppare COLOR? */
-}
 .figure {
   margin-bottom: 20px;
+}
+
+/* size */
+.very-small {
+  height: 33px;
 }
 .small {
   height: 100px;
@@ -121,12 +127,10 @@ section {
 /* button */
 .cta {
   font-size: 14px;
-  color: white;
   background-color: #fe775a;
   border-radius: 5px;      /* NOTE: Raggruppare RADIUS? */
 }
 .alt {
-  color: #fe775a;   /* NOTE: Raggruppare COLOR? */
   background-color: transparent;
   border: 1px solid #fe775a;
 }
@@ -137,6 +141,9 @@ section {
 /* text */
 .smaller {
   font-size: 11px;
+}
+.bold {
+  font-weight: bold;
 }
 .left {
   text-align: left;
@@ -156,12 +163,18 @@ section {
 
 /* color */
 .white {
-  background-color: white;
-  border-style: groove;
-  border-radius: 5px;   /* NOTE: Raggruppare RADIUS? */
+  color: white;
+}
+.orange {
+  color: #fe775a;
 }
 .light-blue {
   background-color: #f4f9fd;
+}
+.bgwhite {
+  background-color: white;
+  border-style: groove;
+  border-radius: 5px;   /* NOTE: Raggruppare RADIUS? */
 }
 
 /* content */
@@ -171,8 +184,6 @@ section {
 .learn::before {
   content: 'Learn More';
 }
-
-
 /* END GENERAL */
 
 /* HEADER */
@@ -230,8 +241,8 @@ header .banner .banner-bottom {
 /* END HEADER */
 
 /* MAIN */
-/* Services */
 
+/* Services */
 /* intro */
 main .services .intro .seventy {
   margin: auto;
@@ -255,10 +266,10 @@ main .services .crm .col.seventy hr {
 main .services .plans .col:nth-child(2) {
   margin: 0 5%;
 }
-main .services .plans .col .white {
+main .services .plans .col .bgwhite {
   padding: 20px 40px;
 }
-main .services .plans .col .white hr {
+main .services .plans .col .bgwhite hr {
   margin: 40px 0;
   border: 1px solid gray;
   background-color: gray;
@@ -270,17 +281,17 @@ main .services .plans .col .white hr {
 
 /* Community */
 main .community {
-  color: white;
   background-image: linear-gradient(to right top, #00a4bc, #00abba, #00b1b5, #00b7ae, #00bda5);
 }
 main .community .row:last-child {
   margin-bottom: 50px;
 }
+
+/* table */
 main .community .table .table-row:first-child {
   border-bottom: 1px solid white;
 }
 main .community .table .table-row .item {
-  width: calc(100% / 4);
   border-right: 1px solid white;
 }
 main .community .table .table-row .item:last-child {
@@ -301,6 +312,7 @@ main .community .table .table-row .item h2::after {
 main .community .row.table .item > p.smaller {
   margin: 0;
 }
+/* end Community */
 
 /* Partners */
 /* customers */
@@ -320,5 +332,12 @@ main .partners .customers .seventy .stripe .logo > img {
 main .partners .row .col.teaser {
   padding-right: 100px;
 }
-/* end Community */
+/* end Partners */
 /* END MAIN */
+
+  /* FOOTER */
+  footer {
+    background-color: #32495b;
+  }
+
+  /* END FOOTER */
