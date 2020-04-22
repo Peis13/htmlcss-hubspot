@@ -12,7 +12,7 @@
 body {
  font-family: 'Montserrat', sans-serif;
  font-size: 15px;
- color: #33475b;    /* NOTE: posso dare una classe al BODY? */
+ color: #33475b;
 }
 ul {
   list-style-type: none;
@@ -84,6 +84,9 @@ section {
 }
 .box {
   padding: 20px 40px;
+}
+.item {
+  padding: 20px 100px;
 }
 .clearfix::after {
   content: '';
@@ -168,7 +171,7 @@ section {
 
 /* HEADER */
 header a {
-  color: #33475b;   /* NOTE: come il BODY */
+  color: #33475b;
 }
 header .stripe .logo > img {
   vertical-align: middle;
@@ -224,10 +227,10 @@ header .banner .banner-bottom {
 /* Services */
 
 /* intro */
-main .services .intro .box {
-  padding: 20px 100px;
+main .services .intro .seventy {
+  margin: auto;
 }
-main .services .intro .box img {
+main .services .intro img {
   height: 200px;
 }
 
@@ -249,7 +252,10 @@ main .services .crm .col.seventy hr {
 main .services .plans .col:nth-child(2) {
   margin: 0 5%;
 }
-main .services .plans .box hr {
+main .services .plans .col .white {
+  padding: 20px 40px;
+}
+main .services .plans .col .white hr {
   margin: 40px 0;
   border: 1px solid gray;
   background-color: gray;
@@ -267,21 +273,21 @@ main .community {
 main .community .row:last-child {
   margin-bottom: 50px;
 }
-main .community .table .table-row .box {
-  width: calc(100% / 4);
-  border-right: 1px solid white;
-}
 main .community .table .table-row:first-child {
   border-bottom: 1px solid white;
 }
-main .community .table .table-row .box:last-child {
+main .community .table .table-row .item {
+  width: calc(100% / 4);
+  border-right: 1px solid white;
+}
+main .community .table .table-row .item:last-child {
   border-right: none;
 }
-main .community .table .table-row .box h2 {
+main .community .table .table-row .item h2 {
   display: inline-block;
   margin-bottom: 10px;
 }
-main .community .table .table-row .box h2::after {
+main .community .table .table-row .item h2::after {
   content: '+';
   font-size: 25px;
   position: absolute;
@@ -289,8 +295,18 @@ main .community .table .table-row .box h2::after {
   right: -50%;
   transform: translate(-50%, -50%);
 }
-main .community .row.table .box > p.smaller {
+main .community .row.table .item > p.smaller {
   margin: 0;
+}
+
+/* Partners */
+main .partners .customers .stripe .logo {
+  width: calc(100% / 4);
+  padding: 20px;
+}
+main .partners .customers .seventy .stripe .logo > img {
+  width: 100%;
+  vertical-align: middle;
 }
 /* end Community */
 /* END MAIN */
