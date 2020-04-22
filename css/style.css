@@ -306,7 +306,7 @@ main .community .row.table .item > p.smaller {
 /* customers */
 main .partners .customers .stripe .logo {
   width: calc(100% / 4);
-  padding: 20px;
+  padding: 0 20px;
 }
 main .partners .customers .seventy {
   padding: 0 120px;
