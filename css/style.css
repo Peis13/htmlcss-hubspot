@@ -125,6 +125,7 @@ section {
 .cta {
   background-color: #fe775a;
   border-radius: 5px;      /* NOTE: Raggruppare RADIUS? */
+  display: inline-block;
 }
 .alt {
   background-color: transparent;
@@ -167,6 +168,12 @@ section {
 .light-blue {
   background-color: #f4f9fd;
 }
+.light-gray {
+  color: #dadee0;
+}
+.bglight-gray {
+  background-color: #dadee0;
+}
 .bgwhite {
   background-color: white;
   border-style: groove;
@@ -180,13 +187,18 @@ section {
 .learn::before {
   content: 'Learn More';
 }
+
+/* ID */
+#copyright {
+  margin-top: 10px;
+}
 /* END GENERAL */
 
 /* HEADER */
 header a {
   color: #33475b;
 }
-header .stripe .logo > img {
+header .stripe  > * {
   vertical-align: middle;
 }
 header .stripe .right li {
@@ -245,7 +257,7 @@ main .services .intro .seventy {
 }
 
 /* CRM */
-#crm > * {
+main .services #crm > * {
   padding: 50px 50px 20px;
 }
 
@@ -332,12 +344,24 @@ main .partners .row .col.teaser {
 footer {
   background-color: #32495b;
 }
+footer a.cta {
+  color: #33475b;
+}
 
   /* various link */
 footer .various-link .col .link-list li {
-  margin: 10px 0;
+  padding: 10px 0;
 }
 footer .various-link .col .link-list li:first-child {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+/* social */
+footer .various-link .col .link-list .social li {
+  padding-right: 30px;
+}
+
+footer .languages .lang-list li {
+  padding: 0 20px;
 }
   /* END FOOTER */
