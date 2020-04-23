@@ -385,3 +385,66 @@ footer #copyright {
   margin-top: 10px;
 }
   /* END FOOTER */
+
+/* CHAT */
+#chat {
+  width: 250px;
+  height: 230px;
+  position: relative;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#chat .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #32495b;
+  position: relative;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  -webkit-box-shadow: 1px  1px 10px #eaeef0, -1px -1px 10px #eaeef0, 1px -1px 10px #eaeef0, -1px  1px 10px #eaeef0;
+}
+#chat .icon:hover {
+  -webkit-box-shadow: 1px  1px 20px #eaeef0, -1px -1px 20px #eaeef0, 1px -1px 20px #eaeef0, -1px  1px 20px #eaeef0;
+}
+#chat .icon > img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* message window */
+#message {
+  width: 100%;
+  padding: 30px 15px 15px;
+  position: relative;
+}
+#message .exit {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#message .hubbot {
+  width: 50px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#message p {
+  font-size: 14px;
+  margin: 0;
+}
+#message .tail {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  transform: translate(-50%, 100%);
+}
+/* END CHAT */
