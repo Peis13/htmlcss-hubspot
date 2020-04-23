@@ -18,7 +18,7 @@ h1 {
   margin-bottom: 30px;
 }
 h2 {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -174,10 +174,6 @@ section {
   border-radius: 5px;
 }
 
-/* ID */
-#copyright {
-  margin-top: 10px;
-}
 /* END GENERAL */
 
 /* HEADER */
@@ -195,19 +191,19 @@ header .stripe .right li {
 }
 
 /* language and contact */
-header .user-menu .language li {    /* NOTE: qui non ho usato il margine perchè l'elemento ha il bordo! altrimenti si poteva usare anche il margine per distanziare */
+header #user-menu .language li {    /* NOTE: qui non ho usato il margine perchè l'elemento ha il bordo! altrimenti si poteva usare anche il margine per distanziare */
   padding: 0 20px;
   border-right: 1px solid #33475b;
 }
-header .user-menu .language li:first-child {
+header #user-menu .language li:first-child {
   padding-left: 0;
 }
-header .user-menu .language li:last-child {
+header #user-menu .language li:last-child {
   border: none;
 }
 
 /* action */
-header .user-menu .action li .search {
+header #user-menu .action li .search {
   color: #13abc2;
 }
 
@@ -238,17 +234,17 @@ header .banner .banner-bottom {
 
 /* Services */
 /* intro */
-main .services .intro .seventy {
+main #services .intro .seventy {
   margin: auto;
 }
 
 /* CRM */
-main .services #crm > * {
+main #services #crm > * {
   padding: 50px 50px 20px;
 }
 
 /* hr */
-main .services .crm .col.seventy hr {
+main #services #crm .col.seventy hr {
   width: 60%;
   margin: 5px 0 5px 50px;
   border: 1px solid gray;
@@ -257,13 +253,13 @@ main .services .crm .col.seventy hr {
 }
 
 /* plans */
-main .services .plans .col:nth-child(2) {
+main #services #plans .col:nth-child(2) {
   margin: 0 5%;
 }
-main .services .plans .col .bgwhite {
+main #services #plans .col .bgwhite {
   padding: 20px 40px;
 }
-main .services .plans .col .bgwhite hr {
+main #services #plans .col .bgwhite hr {
   margin: 60px 0 40px;
   border: 1px solid gray;
   background-color: gray;
@@ -271,31 +267,31 @@ main .services .plans .col .bgwhite hr {
 /* end Services */
 
 /* Community */
-main .community {
+main #community {
   background-image: linear-gradient(to right top, #00a4bc, #00abba, #00b1b5, #00b7ae, #00bda5);
 }
-main .community .row:last-child {
+main #community .row:last-child {
   margin-bottom: 50px;
 }
-main .community .row .table-row:last-child .item:last-child > .figure {
+main #community .row .table-row:last-child .item:last-child > .figure {
   margin-bottom: 30px;
 }
 
 /* table */
-main .community .table .table-row:first-child {
+main #community .table .table-row:first-child {
   border-bottom: 1px solid white;
 }
-main .community .table .table-row .item {
+main #community .table .table-row .item {
   border-right: 1px solid white;
 }
-main .community .table .table-row .item:last-child {
+main #community .table .table-row .item:last-child {
   border-right: none;
 }
-main .community .table .table-row .item h2 {
+main #community .table .table-row .item h2 {
   display: inline-block;
   margin-bottom: 10px;
 }
-main .community .table .table-row .item h2::after {
+main #community .table .table-row .item h2::after {
   content: '+';
   font-size: 25px;
   position: absolute;
@@ -303,27 +299,27 @@ main .community .table .table-row .item h2::after {
   right: -50%;
   transform: translate(-50%, -50%);
 }
-main .community .row.table .item > p.smaller {
+main #community .row.table .item > p.smaller {
   margin: 0;
 }
 /* end Community */
 
 /* Partners */
 /* customers */
-main .partners .customers .stripe .logo {
+main #partners .customers .stripe .logo {
   width: calc(100% / 4);
   padding: 0 20px;
 }
-main .partners .customers .seventy {
+main #partners .customers .seventy {
   padding: 0 120px;
 }
-main .partners .customers .seventy .stripe .logo > img {
+main #partners .customers .seventy .stripe .logo > img {
   width: 100%;
   vertical-align: middle;
 }
 
 /* teaser */
-main .partners .row .col.teaser {
+main #partners .row .col.teaser {
   padding-right: 100px;
 }
 /* end Partners */
@@ -338,19 +334,24 @@ footer a.cta {
 }
 
   /* various link */
-footer .various-link .col .link-list li {
+footer #various-link .col .link-list li {
   padding: 10px 0;
 }
-footer .various-link .col .link-list li:first-child {
+footer #various-link .col .link-list li:first-child {
   margin-top: 20px;
 }
 
 /* social */
-footer .various-link .col .link-list .social li {
+footer #various-link .col .link-list .social li {
   padding-right: 30px;
 }
 
-footer .languages .lang-list li {
+footer #languages .lang-list li {
   padding: 0 20px;
+}
+
+/* Copyright */
+footer #copyright {
+  margin-top: 10px;
 }
   /* END FOOTER */
